@@ -2,7 +2,7 @@
 
 -- VIEWS
 -- ROLLUP
--- 
+-- MODES 
 
 -- INSTEAD OF TYPING THIS QUERY ALL THE TIME...
 SELECT 
@@ -101,3 +101,15 @@ SELECT
     , AVG(rating)
 FROM full_reviews
 GROUP BY released_year , genre , first_name WITH ROLLUP;
+
+
+-- MODES: Are settings that we can turn on and off
+
+-- Viewing Modes:
+ SELECT @@GLOBAL.sql_mode;
+
+SELECT @@SESSION.sql_mode;
+
+-- To Set Them:
+SET GLOBAL sql_mode = 'modes';
+SET SESSION sql_mode = 'modes';
