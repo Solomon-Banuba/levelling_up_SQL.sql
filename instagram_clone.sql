@@ -1,6 +1,6 @@
 -- INSTAGRAM CLONE DATA ANALYSIS:
 -- CREATING SCHEMAS
---Complete Instagram Schema
+-- Complete Instagram Schema
 
 CREATE TABLE users (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
